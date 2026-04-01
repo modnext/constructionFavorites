@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="107">
+  <author>aaw3k</author>
+  <version>1.0.0.0</version>
+
+  <title>
+    <en>Construction Favorites</en>
+    <de>Baumenü Favoriten</de>
+    <fr>Favoris De Construction</fr>
+    <pl>Ulubione W Trybie Budowy</pl>
+    <ru>Избранное В Меню Строительства</ru>
+  </title>
+
+  <description>
+    <en><![CDATA[
+Add a touch of convenience to your game by organizing your most used buildings and landscaping tools. Instead of constantly searching for the same items in the construction menu, you can now save your favorite items in up to 9 customly colored groups for quick and easy access.
+
+Features:
+- A new "Favorites" category right inside the construction menu.
+- Full support for all base game, DLC, and modded placeables, including landscaping brushes.
+- Create up to 9 customizable groups with unique names and distinct colors.
+- Quickly identify your favorited items by their color-coded star icons.
+- Automatically removes favorites from uninstalled mods and DLCs.
+
+Hotkeys:
+- Press 'T' to add or remove the selected item to/from the active favorite group.
+- Press 'G' to cycle through favorite groups or create new groups.
+- Press 'Delete' to delete the currently active group.
+
+For more info, bug reports, or to contribute, check out GitHub (modnext/constructionFavorites).
+]]></en>
+    <de><![CDATA[
+Bringe etwas mehr Komfort in dein Spiel, indem du deine meistgenutzten Gebäude und Landschaftsbau-Werkzeuge organisierst. Anstatt im Baumenü ständig nach denselben Elementen zu suchen, kannst du nun deine Lieblingsobjekte in bis zu 9 individuell eingefärbten Gruppen für einen schnellen und einfachen Zugriff speichern.
+
+Funktionen:
+- Eine neue "Favoriten"-Kategorie direkt im Baumenü.
+- Volle Unterstützung für alle platzierbaren Objekte aus dem Basisspiel, DLCs und von Mods, einschließlich Landschaftsbau-Pinseln.
+- Erstelle bis zu 9 anpassbare Gruppen mit individuellen Namen und eigenen Farben.
+- Schnelles Erkennen deiner favorisierten Elemente anhand der farblich passenden Stern-Symbole.
+- Entfernt automatisch Favoriten von deinstallierten Mods und DLCs.
+
+Tastenkombinationen:
+- Drücke 'T', um das ausgewählte Element der aktiven Favoritengruppe hinzuzufügen oder es daraus zu entfernen.
+- Drücke 'G', um durch die Favoritengruppen zu wechseln oder neue Gruppen zu erstellen.
+- Drücke 'Entf', um die aktuell aktive Gruppe zu löschen.
+
+Für mehr Infos, Fehlermeldungen oder kleine Beiträge schau einfach auf GitHub vorbei (modnext/constructionFavorites).
+]]></de>
+    <fr><![CDATA[
+Ajoutez une touche de confort à votre jeu en organisant vos bâtiments et outils d'aménagement paysager les plus utilisés. Au lieu de chercher constamment les mêmes éléments dans le menu de construction, vous pouvez désormais sauvegarder vos objets préférés dans jusqu'à 9 groupes de couleurs personnalisées pour un accès rapide et facile.
+
+Fonctionnalités :
+- Une nouvelle catégorie "Favoris" directement dans le menu de construction.
+- Prise en charge complète de tous les objets plaçables du jeu de base, des DLC et des mods, y compris les pinceaux d'aménagement paysager.
+- Créez jusqu'à 9 groupes personnalisables avec des noms uniques et des couleurs distinctes.
+- Identifiez rapidement vos objets favoris grâce à leurs icônes d'étoile aux couleurs de chaque groupe.
+- Supprime automatiquement les favoris de mods et DLC désinstallés.
+
+Raccourcis clavier :
+- Appuyez sur 'T' pour ajouter ou retirer l'élément sélectionné du groupe de favoris actif.
+- Appuyez sur 'G' pour parcourir les groupes de favoris ou en créer de nouveaux.
+- Appuyez sur 'Suppr' pour supprimer le groupe actuellement actif.
+
+Pour plus d'infos, signaler un bug ou apporter votre aide, rendez-vous sur GitHub (modnext/constructionFavorites).
+]]></fr>
+    <pl><![CDATA[
+Dodaj trochę wygody do swojej rozgrywki, organizując najczęściej używane budynki i narzędzia do kształtowania terenu. Zamiast ciągłego szukania tych samych elementów w menu budowy, możesz teraz zapisać swoje ulubione obiekty w maksymalnie 9 oznaczonych kolorami grupach, aby mieć do nich szybki i łatwy dostęp.
+
+Funkcje:
+- Nowa kategoria "Ulubione" w menu budowy, dla łatwego i szybkiego dostępu.
+- Pełne wsparcie dla wszystkich obiektów z gry bazowej, DLC oraz modów, w tym pędzli do rzeźbienia i malowania terenu.
+- Możliwość stworzenia do 9 własnych grup z unikalnymi nazwami oraz przypisanym kolorem.
+- Łatwe rozpoznawanie ulubionych obiektów dzięki ikonkom gwiazdki dopasowanym do koloru grupy.
+- Automatycznie usuwa z ulubionych obiekty z odinstalowanych modów i DLC.
+
+Skróty klawiszowe:
+- Wciśnij 'T', aby dodać lub usunąć wybrany element do/z aktywnej grupy ulubionych.
+- Wciśnij 'G', aby przełączać się między grupami ulubionych lub tworzyć nowe.
+- Wciśnij 'Delete', aby usunąć aktualnie aktywną grupę.
+
+Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moim GitHubie (modnext/constructionFavorites).
+]]></pl>
+    <ru><![CDATA[
+Добавьте немного удобства в свою игру, организовав самые используемые здания и инструменты для изменения ландшафта. Вместо того, чтобы постоянно искать одни и те же элементы в меню строительства, вы теперь можете сохранить свои любимые объекты в до 9 окрашенных групп для быстрого и удобного доступа.
+
+Особенности:
+- Новая категория «Избранное» прямо в меню строительства.
+- Полная поддержка всех размещаемых объектов базовой игры, DLC и модов, включая кисти для ландшафта.
+- Создавайте до 9 настраиваемых групп с уникальными названиями и различными цветами.
+- Быстро определяйте свои избранные элементы по значкам в виде звездочек с цветовой кодировкой вашей группы.
+- Автоматически удаляет из избранного объекты удаленных модов и DLC.
+
+Горячие клавиши:
+- Нажмите «T», чтобы добавить или удалить выбранный элемент в/из активной группы избранного.
+- Нажмите «G», чтобы переключаться между группами избранного или создавать новые группы.
+- Нажмите «Delete», чтобы удалить текущую активную группу.
+
+Для получения дополнительной информации, сообщений об ошибках или участия загляните на GitHub (modnext/constructionFavorites).
+]]></ru>
+  </description>
+
+  <l10n filenamePrefix="l10n/l10n" />
+
+  <iconFilename>icon_constructionFavorites.dds</iconFilename>
+  <multiplayer supported="true" />
+
+  <extraSourceFiles>
+    <sourceFile filename="scripts/AdditionalGuiElements.lua" />
+    <sourceFile filename="scripts/ConstructionFavoritesSystem.lua" />
+    <sourceFile filename="scripts/hud/ConstructionScreenHUDExtension.lua" />
+    <sourceFile filename="scripts/gui/ConstructionScreenExtension.lua" />
+  </extraSourceFiles>
+
+  <actions>
+    <action name="TOGGLE_FAVORITE" axisType="HALF" displayCategory="MENU" />
+    <action name="MANAGE_FAVORITE_GROUPS" axisType="HALF" displayCategory="MENU" />
+    <action name="DELETE_FAVORITE_GROUP" axisType="HALF" displayCategory="MENU" />
+  </actions>
+
+  <inputBinding>
+    <actionBinding action="TOGGLE_FAVORITE">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_t" />
+    </actionBinding>
+    <actionBinding action="MANAGE_FAVORITE_GROUPS">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_g" />
+    </actionBinding>
+    <actionBinding action="DELETE_FAVORITE_GROUP">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_delete" />
+    </actionBinding>
+  </inputBinding>
+</modDesc>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Přepnout oblíbené" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Spravovat skupiny" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Smazat skupinu" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Oblíbené" />
+    <e k="constructionFavorites_add" v="Přidat do oblíbených" />
+    <e k="constructionFavorites_remove" v="Odebrat z oblíbených" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Přidat do %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Odebrat z %s" />
+    <e k="constructionFavorites_switchGroup" v="Změnit skupinu" />
+    <e k="constructionFavorites_createGroup" v="Vytvořit skupinu" />
+    <e k="constructionFavorites_deleteGroup" v="Smazat skupinu" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Opravdu chcete smazat skupinu '%s'?" />
+    <e k="constructionFavorites_groupName" v="Zadejte název skupiny" />
+  </elements>
+</l10n>

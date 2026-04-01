@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Växla favorit" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Hantera grupper" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Ta bort grupp" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favoriter" />
+    <e k="constructionFavorites_add" v="Lägg till i favoriter" />
+    <e k="constructionFavorites_remove" v="Ta bort från favoriter" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Lägg till i %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Ta bort från %s" />
+    <e k="constructionFavorites_switchGroup" v="Ändra grupp" />
+    <e k="constructionFavorites_createGroup" v="Skapa grupp" />
+    <e k="constructionFavorites_deleteGroup" v="Ta bort grupp" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Är du säker på att du vill ta bort gruppen '%s'?" />
+    <e k="constructionFavorites_groupName" v="Ange gruppnamn" />
+  </elements>
+</l10n>

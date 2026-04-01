@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Favoriyi Değiştir" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Grupları Yönet" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Grubu Sil" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favoriler" />
+    <e k="constructionFavorites_add" v="Favorilere Ekle" />
+    <e k="constructionFavorites_remove" v="Favorilerden Çıkar" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="%s Grubuna Ekle" />
+    <e k="constructionFavorites_removeFromGroup" v="%s Grubundan Çıkar" />
+    <e k="constructionFavorites_switchGroup" v="Grubu Değiştir" />
+    <e k="constructionFavorites_createGroup" v="Grup Oluştur" />
+    <e k="constructionFavorites_deleteGroup" v="Grubu Sil" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="'%s' grubunu silmek istediğinizden emin misiniz?" />
+    <e k="constructionFavorites_groupName" v="Grup adını girin" />
+  </elements>
+</l10n>

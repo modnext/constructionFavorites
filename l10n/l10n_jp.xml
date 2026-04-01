@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="お気に入りの切り替え" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="グループの管理" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="グループの削除" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="お気に入り" />
+    <e k="constructionFavorites_add" v="お気に入りに追加" />
+    <e k="constructionFavorites_remove" v="お気に入りから削除" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="%s に追加" />
+    <e k="constructionFavorites_removeFromGroup" v="%s から削除" />
+    <e k="constructionFavorites_switchGroup" v="グループの変更" />
+    <e k="constructionFavorites_createGroup" v="グループの作成" />
+    <e k="constructionFavorites_deleteGroup" v="グループの削除" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="グループ「%s」を削除してもよろしいですか？" />
+    <e k="constructionFavorites_groupName" v="グループ名を入力" />
+  </elements>
+</l10n>

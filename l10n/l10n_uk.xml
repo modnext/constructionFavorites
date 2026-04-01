@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Перемкнути улюблене" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Керування групами" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Видалити групу" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Улюблені" />
+    <e k="constructionFavorites_add" v="Додати до улюблених" />
+    <e k="constructionFavorites_remove" v="Видалити з улюблених" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Додати до %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Видалити з %s" />
+    <e k="constructionFavorites_switchGroup" v="Змінити групу" />
+    <e k="constructionFavorites_createGroup" v="Створити групу" />
+    <e k="constructionFavorites_deleteGroup" v="Видалити групу" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Ви впевнені, що хочете видалити групу «%s»?" />
+    <e k="constructionFavorites_groupName" v="Введіть назву групи" />
+  </elements>
+</l10n>

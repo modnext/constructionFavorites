@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Vaihda suosikki" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Hallitse ryhmiä" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Poista ryhmä" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Suosikit" />
+    <e k="constructionFavorites_add" v="Lisää suosikkeihin" />
+    <e k="constructionFavorites_remove" v="Poista suosikeista" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Lisää ryhmään %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Poista ryhmästä %s" />
+    <e k="constructionFavorites_switchGroup" v="Vaihda ryhmää" />
+    <e k="constructionFavorites_createGroup" v="Luo ryhmä" />
+    <e k="constructionFavorites_deleteGroup" v="Poista ryhmä" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Haluatko varmasti poistaa ryhmän '%s'?" />
+    <e k="constructionFavorites_groupName" v="Anna ryhmän nimi" />
+  </elements>
+</l10n>

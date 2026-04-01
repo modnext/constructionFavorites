@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Favorit umschalten" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Gruppen verwalten" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Gruppe löschen" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favoriten" />
+    <e k="constructionFavorites_add" v="Zu Favoriten hinzufügen" />
+    <e k="constructionFavorites_remove" v="Aus Favoriten entfernen" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Zu %s hinzufügen" />
+    <e k="constructionFavorites_removeFromGroup" v="Aus %s entfernen" />
+    <e k="constructionFavorites_switchGroup" v="Gruppe wechseln" />
+    <e k="constructionFavorites_createGroup" v="Gruppe erstellen" />
+    <e k="constructionFavorites_deleteGroup" v="Gruppe löschen" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Bist du sicher, dass du die Gruppe '%s' löschen möchtest?" />
+    <e k="constructionFavorites_groupName" v="Gruppenname eingeben" />
+  </elements>
+</l10n>

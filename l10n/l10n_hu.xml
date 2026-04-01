@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Kedvenc váltása" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Csoportok kezelése" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Csoport törlése" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Kedvencek" />
+    <e k="constructionFavorites_add" v="Hozzáadás a kedvencekhez" />
+    <e k="constructionFavorites_remove" v="Eltávolítás a kedvencekből" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Hozzáadás a következőhöz: %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Eltávolítás a következőből: %s" />
+    <e k="constructionFavorites_switchGroup" v="Csoport váltása" />
+    <e k="constructionFavorites_createGroup" v="Csoport létrehozása" />
+    <e k="constructionFavorites_deleteGroup" v="Csoport törlése" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Biztosan törölni szeretné a(z) '%s' csoportot?" />
+    <e k="constructionFavorites_groupName" v="Adja meg a csoport nevét" />
+  </elements>
+</l10n>

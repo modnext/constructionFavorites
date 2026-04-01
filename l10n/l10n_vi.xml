@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Chuyển đổi yêu thích" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Quản lý nhóm" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Xóa nhóm" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Yêu thích" />
+    <e k="constructionFavorites_add" v="Thêm vào yêu thích" />
+    <e k="constructionFavorites_remove" v="Xóa khỏi yêu thích" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Thêm vào %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Xóa khỏi %s" />
+    <e k="constructionFavorites_switchGroup" v="Đổi nhóm" />
+    <e k="constructionFavorites_createGroup" v="Tạo nhóm" />
+    <e k="constructionFavorites_deleteGroup" v="Xóa nhóm" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Bạn có chắc chắn muốn xóa nhóm '%s' không?" />
+    <e k="constructionFavorites_groupName" v="Nhập tên nhóm" />
+  </elements>
+</l10n>

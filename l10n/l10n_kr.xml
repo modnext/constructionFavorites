@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="즐겨찾기 전환" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="그룹 관리" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="그룹 삭제" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="즐겨찾기" />
+    <e k="constructionFavorites_add" v="즐겨찾기에 추가" />
+    <e k="constructionFavorites_remove" v="즐겨찾기에서 제거" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="%s에 추가" />
+    <e k="constructionFavorites_removeFromGroup" v="%s에서 제거" />
+    <e k="constructionFavorites_switchGroup" v="그룹 변경" />
+    <e k="constructionFavorites_createGroup" v="그룹 생성" />
+    <e k="constructionFavorites_deleteGroup" v="그룹 삭제" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="'%s' 그룹을 삭제하시겠습니까?" />
+    <e k="constructionFavorites_groupName" v="그룹 이름 입력" />
+  </elements>
+</l10n>

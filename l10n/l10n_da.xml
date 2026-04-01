@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Skift favorit" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Administrer grupper" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Slet gruppe" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favoritter" />
+    <e k="constructionFavorites_add" v="Tilføj til favoritter" />
+    <e k="constructionFavorites_remove" v="Fjern fra favoritter" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Tilføj til %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Fjern fra %s" />
+    <e k="constructionFavorites_switchGroup" v="Skift gruppe" />
+    <e k="constructionFavorites_createGroup" v="Opret gruppe" />
+    <e k="constructionFavorites_deleteGroup" v="Slet gruppe" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Er du sikker på, at du vil slette gruppen '%s'?" />
+    <e k="constructionFavorites_groupName" v="Indtast gruppenavn" />
+  </elements>
+</l10n>

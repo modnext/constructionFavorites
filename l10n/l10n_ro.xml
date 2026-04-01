@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Comută favorit" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Gestionează grupuri" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Șterge grupul" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favorite" />
+    <e k="constructionFavorites_add" v="Adaugă la favorite" />
+    <e k="constructionFavorites_remove" v="Elimină din favorite" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Adaugă la %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Elimină din %s" />
+    <e k="constructionFavorites_switchGroup" v="Schimbă grupul" />
+    <e k="constructionFavorites_createGroup" v="Creează grup" />
+    <e k="constructionFavorites_deleteGroup" v="Șterge grupul" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Ești sigur că vrei să ștergi grupul '%s'?" />
+    <e k="constructionFavorites_groupName" v="Introdu numele grupului" />
+  </elements>
+</l10n>

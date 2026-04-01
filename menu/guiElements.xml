@@ -1,0 +1,12 @@
+<texture>
+  <meta>
+    <filename>guiElements.png</filename>
+    <size width="256" height="256"/>
+  </meta>
+  <slices>
+    <slice id="icon_favorites" uvs="2px 2px 80px 80px"/>
+    <slice id="icon_grid" uvs="84px 2px 80px 80px"/>
+    <slice id="icon_star" uvs="166px 2px 20px 20px"/>
+    <slice id="icon_star_outline" uvs="166px 24px 20px 20px"/>
+  </slices>
+</texture>

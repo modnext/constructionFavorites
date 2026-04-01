@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_TOGGLE_FAVORITE" v="Alihkan Favorit" />
+    <e k="input_MANAGE_FAVORITE_GROUPS" v="Kelola Grup" />
+    <e k="input_DELETE_FAVORITE_GROUP" v="Hapus Grup" />
+
+    <!-- Construction Favorites -->
+    <e k="constructionFavorites_category" v="Favorit" />
+    <e k="constructionFavorites_add" v="Tambahkan ke Favorit" />
+    <e k="constructionFavorites_remove" v="Hapus dari Favorit" />
+
+    <!-- Groups -->
+    <e k="constructionFavorites_addToGroup" v="Tambahkan ke %s" />
+    <e k="constructionFavorites_removeFromGroup" v="Hapus dari %s" />
+    <e k="constructionFavorites_switchGroup" v="Ubah Grup" />
+    <e k="constructionFavorites_createGroup" v="Buat Grup" />
+    <e k="constructionFavorites_deleteGroup" v="Hapus Grup" />
+    <e k="constructionFavorites_deleteGroupConfirm" v="Apakah Anda yakin ingin menghapus grup '%s'?" />
+    <e k="constructionFavorites_groupName" v="Masukkan nama grup" />
+  </elements>
+</l10n>
