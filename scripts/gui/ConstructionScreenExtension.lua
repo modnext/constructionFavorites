@@ -684,6 +684,10 @@ ConstructionScreen.rebuildData = Utils.appendedFunction(ConstructionScreen.rebui
 
 ---Add HUD extension every frame during draw
 local function drawPrepended(self)
+  if ConstructionScreen.uiHidden then
+    return
+  end
+
   if self.constructionFavoritesHUDExtension ~= nil then
     table.insert(g_currentMission.hud.inputHelp.helpExtensions, self.constructionFavoritesHUDExtension)
   end
@@ -694,6 +698,10 @@ ConstructionScreen.draw = Utils.prependedFunction(ConstructionScreen.draw, drawP
 
 ---Draw the placeholder grid icon if the favorites category is empty
 local function onDraw(self)
+  if ConstructionScreen.uiHidden then
+    return
+  end
+
   if not ConstructionScreenExtension.shouldDrawFavoritesPlaceholder(self) then
     return
   end
