@@ -27,7 +27,7 @@ Hotkeys:
 - Press 'Delete' to delete the currently active group.
 
 Changelog Version 1.0.1.0:
-- Improved favorites storage with relative paths to survive mod folder changes.
+- Improved favorites storage with portable paths to survive mod folder changes.
 - Removed automatic deletion of favorites for uninstalled mods due to the changes above.
 - Fixed placeholder icon being drawn when the construction UI is hidden.
 
@@ -48,7 +48,7 @@ Tastenkombinationen:
 - Drücke 'Entf', um die aktuell aktive Gruppe zu löschen.
 
 Changelog Version 1.0.1.0:
-- Favoritenspeicherung mit relativen Pfaden verbessert, um Änderungen am Mod-Ordner standzuhalten.
+- Favoritenspeicherung mit portablen Pfaden verbessert, um Änderungen am Mod-Ordner standzuhalten.
 - Automatisches Löschen von Favoriten für deinstallierte Mods aufgrund der oben genannten Änderungen entfernt.
 - Fehler behoben, bei dem das Platzhaltersymbol angezeigt wurde, wenn die Bau-UI ausgeblendet war.
 
@@ -69,7 +69,7 @@ Raccourcis clavier :
 - Appuyez sur 'Suppr' pour supprimer le groupe actuellement actif.
 
 Changelog Version 1.0.1.0 :
-- Amélioration du stockage des favoris avec des chemins relatifs pour résister aux changements de dossier de mods.
+- Amélioration du stockage des favoris avec des chemins portables pour résister aux changements de dossier de mods.
 - Suppression de l'effacement automatique des favoris pour les mods désinstallés en raison des changements ci-dessus.
 - Correction de l'icône de remplacement affichée lorsque l'interface de construction est masquée.
 
@@ -90,7 +90,7 @@ Skróty klawiszowe:
 - Wciśnij 'Delete', aby usunąć aktualnie aktywną grupę.
 
 Changelog Version 1.0.1.0:
-- Ulepszono zapis ulubionych ze ścieżkami względnymi, aby przetrwały zmiany folderu z modami.
+- Ulepszono zapis ulubionych z przenośnymi ścieżkami, aby przetrwały zmiany folderu z modami.
 - Usunięto automatyczne usuwanie ulubionych dla odinstalowanych modów na skutek powyższych zmian.
 - Naprawiono wyświetlanie ikony zastępczej, gdy interfejs budowy jest ukryty.
 
@@ -111,7 +111,8 @@ Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moi
 - Нажмите «Delete», чтобы удалить текущую активную группу.
 
 Changelog Version 1.0.1.0:
-- Улучшено хранение избранного с относительными путями для сохранности при смене папки с модами.
+- Исправлено: избранное не распознавалось, если имя папки с модами содержит 'FS25_' в пути.
+- Улучшено хранение избранного с портативными путями для сохранности при смене папки с модами.
 - Удалено автоматическое удаление избранного для удалённых модов в связи с вышеуказанными изменениями.
 - Исправлена ошибка отображения значка-заполнителя при скрытом интерфейсе строительства.
 

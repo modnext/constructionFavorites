@@ -41,34 +41,16 @@ function ConstructionFavoritesSystem:markDirty()
   self.isDirty = true
 end
 
----Extract relative storage key from an identifier
--- @param string identifier item identifier
--- @return string|nil storageKey relative path preserving original case
+---Convert an identifier to a portable storage key using engine path variables
+-- Uses $moddir$, $pdlcdir$ etc. to produce paths independent of install location
+-- @param string identifier item identifier (absolute or relative path)
+-- @return string|nil storageKey portable path with engine variable prefix
 function ConstructionFavoritesSystem.toStorageKey(identifier)
   if identifier == nil then
     return nil
   end
 
-  local normalized = identifier:gsub("\\", "/")
-  local lower = string.lower(normalized)
-
-  local pos = lower:match("^.*()/fs25_")
-
-  if pos ~= nil then
-    return normalized:sub(pos + 1)
-  end
-
-  if lower:sub(1, 5) == "fs25_" then
-    return normalized
-  end
-
-  pos = lower:find("pdlc/") or lower:find("data/")
-
-  if pos ~= nil then
-    return normalized:sub(pos)
-  end
-
-  return normalized
+  return NetworkUtil.convertToNetworkFilename(identifier)
 end
 
 ---Ensure storage keys are resolved to current runtime paths
@@ -83,28 +65,22 @@ function ConstructionFavoritesSystem:ensureResolved()
 end
 
 ---Resolve storage keys to current runtime absolute paths
--- Migrates mod-relative and old absolute keys to current identifiers
+-- Migrates portable storage keys to current absolute paths via NetworkUtil
 function ConstructionFavoritesSystem:resolveStorageKeys()
-  local storageKeyToXml = {}
-
-  if g_storeManager.xmlFilenameToItem ~= nil then
-    for xmlFilename, _ in pairs(g_storeManager.xmlFilenameToItem) do
-      local storageKey = string.lower(ConstructionFavoritesSystem.toStorageKey(xmlFilename))
-      storageKeyToXml[storageKey] = xmlFilename
-    end
-  end
-
   local resolvedFavorites = {}
   local resolvedItemGroups = {}
 
   for key, identifier in pairs(self.favorites) do
     local runtimeKey = nil
-    local storageKey = string.lower(ConstructionFavoritesSystem.toStorageKey(key))
 
     if g_storeManager:getItemByXMLFilename(key) ~= nil then
       runtimeKey = string.lower(key)
-    elseif storageKeyToXml[storageKey] ~= nil then
-      runtimeKey = string.lower(storageKeyToXml[storageKey])
+    else
+      local resolvedPath = NetworkUtil.convertFromNetworkFilename(identifier)
+
+      if resolvedPath ~= nil and g_storeManager:getItemByXMLFilename(resolvedPath) ~= nil then
+        runtimeKey = string.lower(resolvedPath)
+      end
     end
 
     if runtimeKey ~= nil then
@@ -552,7 +528,7 @@ function ConstructionFavoritesSystem:saveToXMLFile()
       if self.itemGroups[lowerKey] ~= nil and self.itemGroups[lowerKey][i] == true then
         local itemKey = string.format("%s.item(%d)", key, itemIndex)
 
-        xmlFile:setString(itemKey .. "#identifier", ConstructionFavoritesSystem.toStorageKey(identifier))
+        xmlFile:setString(itemKey .. "#identifier", HTMLUtil.encodeToHTML(ConstructionFavoritesSystem.toStorageKey(identifier)))
         itemIndex = itemIndex + 1
       end
     end
