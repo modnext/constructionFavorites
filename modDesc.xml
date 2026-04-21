@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="107">
+<modDesc descVersion="108">
   <author>aaw3k</author>
-  <version>1.0.0.0</version>
+  <version>1.0.1.0</version>
 
   <title>
     <en>Construction Favorites</en>
@@ -20,12 +20,16 @@ Features:
 - Full support for all base game, DLC, and modded placeables, including landscaping brushes.
 - Create up to 9 customizable groups with unique names and distinct colors.
 - Quickly identify your favorited items by their color-coded star icons.
-- Automatically removes favorites from uninstalled mods and DLCs.
 
 Hotkeys:
 - Press 'T' to add or remove the selected item to/from the active favorite group.
 - Press 'G' to cycle through favorite groups or create new groups.
 - Press 'Delete' to delete the currently active group.
+
+Changelog Version 1.0.1.0:
+- Improved favorites storage with portable paths to survive mod folder changes.
+- Removed automatic deletion of favorites for uninstalled mods due to the changes above.
+- Fixed placeholder icon being drawn when the construction UI is hidden.
 
 For more info, bug reports, or to contribute, check out GitHub (modnext/constructionFavorites).
 ]]></en>
@@ -37,12 +41,16 @@ Funktionen:
 - Volle Unterstützung für alle platzierbaren Objekte aus dem Basisspiel, DLCs und von Mods, einschließlich Landschaftsbau-Pinseln.
 - Erstelle bis zu 9 anpassbare Gruppen mit individuellen Namen und eigenen Farben.
 - Schnelles Erkennen deiner favorisierten Elemente anhand der farblich passenden Stern-Symbole.
-- Entfernt automatisch Favoriten von deinstallierten Mods und DLCs.
 
 Tastenkombinationen:
 - Drücke 'T', um das ausgewählte Element der aktiven Favoritengruppe hinzuzufügen oder es daraus zu entfernen.
 - Drücke 'G', um durch die Favoritengruppen zu wechseln oder neue Gruppen zu erstellen.
 - Drücke 'Entf', um die aktuell aktive Gruppe zu löschen.
+
+Changelog Version 1.0.1.0:
+- Favoritenspeicherung mit portablen Pfaden verbessert, um Änderungen am Mod-Ordner standzuhalten.
+- Automatisches Löschen von Favoriten für deinstallierte Mods aufgrund der oben genannten Änderungen entfernt.
+- Fehler behoben, bei dem das Platzhaltersymbol angezeigt wurde, wenn die Bau-UI ausgeblendet war.
 
 Für mehr Infos, Fehlermeldungen oder kleine Beiträge schau einfach auf GitHub vorbei (modnext/constructionFavorites).
 ]]></de>
@@ -54,12 +62,16 @@ Fonctionnalités :
 - Prise en charge complète de tous les objets plaçables du jeu de base, des DLC et des mods, y compris les pinceaux d'aménagement paysager.
 - Créez jusqu'à 9 groupes personnalisables avec des noms uniques et des couleurs distinctes.
 - Identifiez rapidement vos objets favoris grâce à leurs icônes d'étoile aux couleurs de chaque groupe.
-- Supprime automatiquement les favoris de mods et DLC désinstallés.
 
 Raccourcis clavier :
 - Appuyez sur 'T' pour ajouter ou retirer l'élément sélectionné du groupe de favoris actif.
 - Appuyez sur 'G' pour parcourir les groupes de favoris ou en créer de nouveaux.
 - Appuyez sur 'Suppr' pour supprimer le groupe actuellement actif.
+
+Changelog Version 1.0.1.0 :
+- Amélioration du stockage des favoris avec des chemins portables pour résister aux changements de dossier de mods.
+- Suppression de l'effacement automatique des favoris pour les mods désinstallés en raison des changements ci-dessus.
+- Correction de l'icône de remplacement affichée lorsque l'interface de construction est masquée.
 
 Pour plus d'infos, signaler un bug ou apporter votre aide, rendez-vous sur GitHub (modnext/constructionFavorites).
 ]]></fr>
@@ -71,12 +83,16 @@ Funkcje:
 - Pełne wsparcie dla wszystkich obiektów z gry bazowej, DLC oraz modów, w tym pędzli do rzeźbienia i malowania terenu.
 - Możliwość stworzenia do 9 własnych grup z unikalnymi nazwami oraz przypisanym kolorem.
 - Łatwe rozpoznawanie ulubionych obiektów dzięki ikonkom gwiazdki dopasowanym do koloru grupy.
-- Automatycznie usuwa z ulubionych obiekty z odinstalowanych modów i DLC.
 
 Skróty klawiszowe:
 - Wciśnij 'T', aby dodać lub usunąć wybrany element do/z aktywnej grupy ulubionych.
 - Wciśnij 'G', aby przełączać się między grupami ulubionych lub tworzyć nowe.
 - Wciśnij 'Delete', aby usunąć aktualnie aktywną grupę.
+
+Changelog Version 1.0.1.0:
+- Ulepszono zapis ulubionych z przenośnymi ścieżkami, aby przetrwały zmiany folderu z modami.
+- Usunięto automatyczne usuwanie ulubionych dla odinstalowanych modów na skutek powyższych zmian.
+- Naprawiono wyświetlanie ikony zastępczej, gdy interfejs budowy jest ukryty.
 
 Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moim GitHubie (modnext/constructionFavorites).
 ]]></pl>
@@ -88,12 +104,17 @@ Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moi
 - Полная поддержка всех размещаемых объектов базовой игры, DLC и модов, включая кисти для ландшафта.
 - Создавайте до 9 настраиваемых групп с уникальными названиями и различными цветами.
 - Быстро определяйте свои избранные элементы по значкам в виде звездочек с цветовой кодировкой вашей группы.
-- Автоматически удаляет из избранного объекты удаленных модов и DLC.
 
 Горячие клавиши:
 - Нажмите «T», чтобы добавить или удалить выбранный элемент в/из активной группы избранного.
 - Нажмите «G», чтобы переключаться между группами избранного или создавать новые группы.
 - Нажмите «Delete», чтобы удалить текущую активную группу.
+
+Changelog Version 1.0.1.0:
+- Исправлено: избранное не распознавалось, если имя папки с модами содержит 'FS25_' в пути.
+- Улучшено хранение избранного с портативными путями для сохранности при смене папки с модами.
+- Удалено автоматическое удаление избранного для удалённых модов в связи с вышеуказанными изменениями.
+- Исправлена ошибка отображения значка-заполнителя при скрытом интерфейсе строительства.
 
 Для получения дополнительной информации, сообщений об ошибках или участия загляните на GitHub (modnext/constructionFavorites).
 ]]></ru>

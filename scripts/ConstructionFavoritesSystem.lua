@@ -22,6 +22,7 @@ function ConstructionFavoritesSystem.new()
   self.itemGroups = {}
   self.activeGroupIndex = 1
   self.isDirty = false
+  self.isResolved = false
   self.hasSyncedThisSession = false
 
   -- load data from xml file
@@ -38,6 +39,72 @@ end
 ---Mark favorites data as changed and pending save
 function ConstructionFavoritesSystem:markDirty()
   self.isDirty = true
+end
+
+---Convert an identifier to a portable storage key using engine path variables
+-- Uses $moddir$, $pdlcdir$ etc. to produce paths independent of install location
+-- @param string identifier item identifier (absolute or relative path)
+-- @return string|nil storageKey portable path with engine variable prefix
+function ConstructionFavoritesSystem.toStorageKey(identifier)
+  if identifier == nil then
+    return nil
+  end
+
+  return NetworkUtil.convertToNetworkFilename(identifier)
+end
+
+---Ensure storage keys are resolved to current runtime paths
+-- Runs resolution exactly once per session on first access
+function ConstructionFavoritesSystem:ensureResolved()
+  if self.isResolved then
+    return
+  end
+
+  self.isResolved = true
+  self:resolveStorageKeys()
+end
+
+---Resolve storage keys to current runtime absolute paths
+-- Migrates portable storage keys to current absolute paths via NetworkUtil
+function ConstructionFavoritesSystem:resolveStorageKeys()
+  local resolvedFavorites = {}
+  local resolvedItemGroups = {}
+
+  for key, identifier in pairs(self.favorites) do
+    local runtimeKey = nil
+
+    if g_storeManager:getItemByXMLFilename(key) ~= nil then
+      runtimeKey = string.lower(key)
+    else
+      local resolvedPath = NetworkUtil.convertFromNetworkFilename(identifier)
+
+      if resolvedPath ~= nil and g_storeManager:getItemByXMLFilename(resolvedPath) ~= nil then
+        runtimeKey = string.lower(resolvedPath)
+      end
+    end
+
+    if runtimeKey ~= nil then
+      local storeItem = g_storeManager:getItemByXMLFilename(runtimeKey)
+
+      resolvedFavorites[runtimeKey] = storeItem ~= nil and storeItem.xmlFilename or identifier
+
+      if resolvedItemGroups[runtimeKey] == nil then
+        resolvedItemGroups[runtimeKey] = self.itemGroups[key]
+      elseif self.itemGroups[key] ~= nil then
+        for groupIdx, value in pairs(self.itemGroups[key]) do
+          resolvedItemGroups[runtimeKey][groupIdx] = value
+        end
+
+        self:markDirty()
+      end
+    else
+      resolvedFavorites[key] = identifier
+      resolvedItemGroups[key] = self.itemGroups[key]
+    end
+  end
+
+  self.favorites = resolvedFavorites
+  self.itemGroups = resolvedItemGroups
 end
 
 ---Validate a group index and optionally apply a default
@@ -63,6 +130,8 @@ end
 -- @param integer groupIndex optional group index to check specifically
 -- @return boolean isFavorite true if item is favorited
 function ConstructionFavoritesSystem:isFavorite(identifier, groupIndex)
+  self:ensureResolved()
+
   if identifier == nil then
     return false
   end
@@ -338,6 +407,8 @@ end
 -- @param string identifier item identifier
 -- @return table|nil groupIndex map
 function ConstructionFavoritesSystem:getItemGroups(identifier)
+  self:ensureResolved()
+
   if identifier == nil then
     return nil
   end
@@ -369,6 +440,7 @@ function ConstructionFavoritesSystem:loadFromXMLFile()
   self.groups = {}
   self.itemGroups = {}
   self.isDirty = false
+  self.isResolved = false
 
   local xmlFile = XMLFile.loadIfExists("ConstructionFavoritesXML", modSettingsDirectory .. "favorites.xml")
 
@@ -394,6 +466,7 @@ function ConstructionFavoritesSystem:loadFromXMLFile()
         local identifier = xmlFile:getString(itemKey .. "#identifier")
 
         if identifier ~= nil and identifier ~= "" then
+          identifier = ConstructionFavoritesSystem.toStorageKey(identifier)
           local lowerKey = string.lower(identifier)
 
           self.favorites[lowerKey] = identifier
@@ -411,50 +484,15 @@ function ConstructionFavoritesSystem:loadFromXMLFile()
   xmlFile:delete()
 end
 
----Resolve mod name from a favorite identifier if it points to mod content
--- @param string identifier item identifier
--- @return string|nil modName
-function ConstructionFavoritesSystem:getIdentifierModName(identifier)
-  if type(identifier) ~= "string" or identifier == "" then
-    return nil
-  end
-
-  local modName = identifier:match("^%$moddir%$(.-)/")
-
-  if modName ~= nil then
-    return modName
-  end
-
-  return select(1, Utils.getModNameAndBaseDirectory(identifier))
-end
-
----Check whether a favorite identifier still points to installed content
--- @param string identifier item identifier
--- @return boolean isInstalled
-function ConstructionFavoritesSystem:isInstalledIdentifier(identifier)
-  local modName = self:getIdentifierModName(identifier)
-
-  return modName == nil or g_modNameToDirectory[modName] ~= nil
-end
-
----Synchronize favorites and remove items belonging to uninstalled mods
+---Synchronize favorites with currently loaded mods
 function ConstructionFavoritesSystem:sync()
   if self.hasSyncedThisSession then
     return
   end
 
   self.hasSyncedThisSession = true
-  local toRemove = {}
-
-  for _, identifier in pairs(self.favorites) do
-    if not self:isInstalledIdentifier(identifier) then
-      table.insert(toRemove, identifier)
-    end
-  end
-
-  for _, identifier in ipairs(toRemove) do
-    self:removeFavorite(identifier)
-  end
+  self:ensureResolved()
+  self:saveIfDirty()
 end
 
 ---Save favorites and groups only when data has changed
@@ -490,7 +528,7 @@ function ConstructionFavoritesSystem:saveToXMLFile()
       if self.itemGroups[lowerKey] ~= nil and self.itemGroups[lowerKey][i] == true then
         local itemKey = string.format("%s.item(%d)", key, itemIndex)
 
-        xmlFile:setString(itemKey .. "#identifier", identifier)
+        xmlFile:setString(itemKey .. "#identifier", HTMLUtil.encodeToHTML(ConstructionFavoritesSystem.toStorageKey(identifier)))
         itemIndex = itemIndex + 1
       end
     end
